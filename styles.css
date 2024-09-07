@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://png.pngtree.com/background/20230620/original/pngtree-colorful-light-filled-tunnel-in-3d-illustration-picture-image_3851723.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+.calculator {
+  background-color: rgba(34, 34, 34, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.display {
+  background-color: #333;
+  color: #fff;
+  font-size: 2em;
+  padding: 20px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background-color: #444;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.operator {
+  background-color: #ff9500;
+}
+
+.operator:hover {
+  background-color: #ffb348;
+}
+
+.equal {
+  grid-column: span 2;
+  background-color: #007aff;
+}
+
+.equal:hover {
+  background-color: #005bb5;
+}
